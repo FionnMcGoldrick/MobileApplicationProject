@@ -10,9 +10,9 @@ import { IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonButtons,  } 
   imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonButtons, RouterLinkWithHref,RouterOutlet],
 })
 export class HomePage{
-  constructor(private router: Router) {
+  constructor(private router: Router) {}
 
-  }
+  title:string = 'Home';
 
   openPage(){
     this.router.navigate(['/page'])
